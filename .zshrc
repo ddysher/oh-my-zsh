@@ -91,7 +91,7 @@ fi
 # Specific variables for different hosts
 if [[ `hostname` == "deyuan.pit.corp.google.com" ]]; then
     export P4EDITOR="emacsclient"
-elif [[ `hostname` == "ubuntu-desktop" ]]; then
+elif [[ `hostname` == "watermelon" ]]; then
     export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
     export PATH=$PATH:"/usr/class/cs143/cool/bin" # Add cool compiler directory
 fi
@@ -114,7 +114,7 @@ fi
 if [[ `hostname` == "deyuan.pit.corp.google.com" ]]; then
     unsetopt correct_all        # do not autocorrect in work machine
     source /etc/bash_completion.d/g4d
-elif [[ `hostname` == "ubuntu-desktop" ]]; then
+elif [[ `hostname` == "watermelon" ]]; then
     eval `dircolors ~/.dir_colors` # do not using annoying background for 'ls'
 fi
 
