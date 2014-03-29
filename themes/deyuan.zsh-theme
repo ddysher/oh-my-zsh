@@ -3,7 +3,7 @@ ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}on %{$fg_bold[magenta]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 
 # Format for parse_git_dirty()
-ZSH_THEME_GIT_PROMPT_DIRTY="!"
+ZSH_THEME_GIT_PROMPT_DIRTY="! "
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # Format for git_prompt_status()
@@ -24,7 +24,7 @@ ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$fg[white]%}]"
 
 # Prompt format
 if [[ `hostname` == "DeyuanCloud" ]] || [[ `hostname` == "ubuntu-vm" ]]; then
-   PROMPT='%{$fg_bold[magenta]%}$USER %{$reset_color%}in %{$fg_bold[yellow]%}%m %{$reset_color%}at %{$fg_bold[green]%}${PWD/#$HOME/~}%u $(git_prompt_info)% %{$fg_bold[magenta]%} $ %{$reset_color%}'
+   PROMPT='%{$fg_bold[magenta]%}$USER %{$reset_color%}in %{$fg_bold[yellow]%}%m %{$reset_color%}at %{$fg_bold[green]%}${PWD/#$HOME/~}%u $(git_prompt_info)% %{$fg_bold[magenta]%}$ %{$reset_color%}'
 else
    PROMPT='%{$fg_bold[magenta]%}$USER %{$reset_color%}in %{$fg_bold[yellow]%}%m %{$reset_color%}at %{$fg_bold[green]%}${PWD/#$HOME/~}%u $(git_prompt_info)% %{$fg_bold[magenta]%}
 ○ %{$reset_color%}'
