@@ -4,7 +4,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 
 # Format for parse_git_dirty()
 ZSH_THEME_GIT_PROMPT_DIRTY="! "
-ZSH_THEME_GIT_PROMPT_CLEAN=""
+ZSH_THEME_GIT_PROMPT_CLEAN=" "
 
 # Format for git_prompt_status()
 ZSH_THEME_GIT_PROMPT_UNMERGED=" %{$fg[red]%}unmerged"
