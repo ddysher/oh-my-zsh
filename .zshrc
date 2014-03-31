@@ -66,7 +66,7 @@ fi
 if [[ `hostname` == "Deyuans-Macbook-Air.local" ]]; then
     alias mysql=/usr/local/mysql/bin/mysql
     alias mysqladmin=/usr/local/mysql/bin/mysqladmin
-    alias mysqld_safe=/usr/local/mysql/bin/mysqld_safe    
+    alias mysqld_safe=/usr/local/mysql/bin/mysqld_safe
 elif [[ `hostname` == "deyuan.pit.corp.google.com" ]]; then
     alias blaze="nocorrect blaze"  # stop correcting blaze
     alias stubby="nocorrect stubby" # stop correcting stubby
@@ -92,8 +92,10 @@ fi
 if [[ `hostname` == "deyuan.pit.corp.google.com" ]]; then
     export P4EDITOR="emacsclient"
 elif [[ `hostname` == "watermelon" ]]; then
+    export GOPATH=$HOME/Coding/Languages/Go # Go path
     export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-    export PATH=$PATH:"/usr/class/cs143/cool/bin" # Add cool compiler directory
+    export PATH=$PATH:/usr/local/go/bin # Add go bin directory
+    export PATH=$PATH:/usr/class/cs143/cool/bin # Add cool compiler directory
 fi
 
 
@@ -116,6 +118,7 @@ if [[ `hostname` == "deyuan.pit.corp.google.com" ]]; then
     source /etc/bash_completion.d/g4d
 elif [[ `hostname` == "watermelon" ]]; then
     eval `dircolors ~/.dir_colors` # do not using annoying background for 'ls'
+    . ~/Downloads/z/z.sh           # enable z.sh
 fi
 
 
