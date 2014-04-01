@@ -66,13 +66,13 @@ if [[ `uname` == "Darwin" ]]; then
     export HOMEBREW_TEMP=/usr/local/TEMP
     export CLASSPATH=.:/Library/Java/Extensions
     export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
-    source `brew --prefix`/etc/profile.d/z.sh    
+    source `brew --prefix`/etc/profile.d/z.sh
 elif [[ `uname` == "Linux" ]]; then
     alias chrome="google-chrome"
     alias emacs="/usr/local/bin/emacsclient -n"
     alias emacsnw="TERM=xterm-256color /usr/local/bin/emacs -nw"
     alias emacsserver="/usr/local/bin/emacs"
-    export EDITOR="vim"    
+    export EDITOR="vim"
 fi
 
 
@@ -87,12 +87,12 @@ if [[ `hostname` == "Deyuans-Macbook-Air.local" ]]; then
 elif [[ `hostname` == "deyuan.pit.corp.google.com" ]]; then
     export P4EDITOR="emacsclient"
     source /etc/bash_completion.d/g4d
-    unsetopt correct_all      # do not autocorrect in work machine    
+    unsetopt correct_all      # do not autocorrect in work machine
 elif [[ `hostname` == "watermelon" ]]; then
-    export GOPATH=$HOME/Coding/Languages/Go # Go path
+    export GOPATH=$HOME/code/go      # Go path
     export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
     export PATH=$PATH:/usr/local/go/bin         # Add go bin directory
     export PATH=$PATH:/usr/class/cs143/cool/bin # Add cool compiler directory
-    source ~/Downloads/z/z.sh                   # enable z.sh
-    eval `dircolors ~/.dir_colors` # do not using annoying background for 'ls'    
+    source ~/code/misc/source/z/z.sh                  # enable z.sh
+    eval `dircolors ~/.dir_colors` # do not using annoying background for 'ls'
 fi
