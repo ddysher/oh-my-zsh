@@ -72,6 +72,7 @@ elif [[ `uname` == "Linux" ]]; then
     alias emacs="/usr/local/bin/emacsclient -n"
     alias emacsnw="TERM=xterm-256color /usr/local/bin/emacs -nw"
     alias emacsserver="/usr/local/bin/emacs"
+    alias ppj="python -mjson.tool"
     export EDITOR="vim"
 fi
 
@@ -89,7 +90,7 @@ elif [[ `hostname` == "deyuan.pit.corp.google.com" ]]; then
     source /etc/bash_completion.d/g4d
     unsetopt correct_all      # do not autocorrect in work machine
 elif [[ `hostname` == "watermelon" ]]; then
-    export GOPATH=$HOME/code/go      # Go path
+    export GOPATH=$HOME/code/misc/languages/go # Go path
     export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
     export PATH=$PATH:/usr/local/go/bin         # Add go bin directory
     export PATH=$PATH:/usr/class/cs143/cool/bin # Add cool compiler directory
