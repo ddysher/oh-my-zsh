@@ -23,7 +23,8 @@ ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$fg[white]%}]"
 
 
 # Prompt format
-if [ `hostname` != "watermelon" ]; then
+# Prompt format
+if [[ `hostname` == "DeyuanCloud" ]] || [[ `hostname` == "ubuntu-vm" ]]; then
    PROMPT='%{$fg_bold[magenta]%}$USER %{$reset_color%}at %{$fg_bold[yellow]%}%m %{$reset_color%}in %{$fg_bold[green]%}${PWD/#$HOME/~}%u $(git_prompt_info)% %{$fg_bold[magenta]%}$ %{$reset_color%}'
 else
    PROMPT='%{$fg_bold[magenta]%}$USER %{$reset_color%}at %{$fg_bold[yellow]%}%m %{$reset_color%}in %{$fg_bold[green]%}${PWD/#$HOME/~}%u $(git_prompt_info)% %{$fg_bold[magenta]%}
